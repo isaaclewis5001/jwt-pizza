@@ -54,7 +54,7 @@ export default function FranchiseDashboard({ user }) {
                     {franchise.stores?.map((store, index) => (
                       <tr key={index} className='hover:bg-gray-100'>
                         <td className='px-6 py-4 text-sm text-center font-medium text-gray-800'>{store.name}</td>
-                        <td className='px-6 py-4 text-end text-sm text-gray-800'>{store.totalRevenue.toLocaleString()} ₿</td>
+                        <td className='px-6 py-4 text-end text-sm text-gray-800'>{(store.totalRevenue || 0).toLocaleString()} ₿</td>
                         <td className='px-6 py-4 text-end text-sm font-medium'>
                           <button
                             type='button'
