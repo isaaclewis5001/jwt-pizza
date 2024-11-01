@@ -63,7 +63,7 @@ jobs:
       id-token: write
     environment:
       name: staging
-      url: https://pizza.pizzasco.lol
+      url: https://stage-pizza.pizzasco.lol
     runs-on: ubuntu-latest
     
     env:
